@@ -12,6 +12,7 @@ module Domain
     # @param latitude [Numerical] geo latitude
     # @param longitude [Numerical] geo longitude
     # @return [Point]
+    # @raise [InvalidDataError] if parameters invalid
     def self.build(latitude:, longitude:)
       raise(InvalidDataError, "Invalid latitude") unless latitude.is_a?(Numeric)
       raise(InvalidDataError, "Invalid longitude") unless longitude.is_a?(Numeric)
