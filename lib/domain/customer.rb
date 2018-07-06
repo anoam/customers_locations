@@ -4,7 +4,7 @@ module Domain
   # Our dear customer
   class Customer
 
-    attr_reader :name
+    attr_reader :name, :user_id
 
     # @param user_id [Integer] customer's user ID
     # @param name [String] customer's name
@@ -30,6 +30,6 @@ module Domain
 
     private
 
-    attr_reader :user_id, :location
+    attr_reader :location
   end
 end

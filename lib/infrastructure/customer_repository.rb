@@ -30,7 +30,7 @@ module Infrastructure
     # @param point [Domain::Point] center of circle to search customers
     # @param distance [Numeric] radius of circle to search customers
     def near(point, distance)
-      customers.find_all { |customer| customer.distance_to(point) <= distance }
+      customers.find_all { |customer| customer.distance_to(point) <= distance }.sort_by(&:user_id)
     end
 
     private
