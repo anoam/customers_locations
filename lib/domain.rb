@@ -6,5 +6,4 @@ module Domain
   autoload :Point, "domain/point"
   autoload :Customer, "domain/customer"
   autoload :CustomerFactory, "domain/customer_factory"
-
 end

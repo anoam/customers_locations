@@ -3,7 +3,6 @@
 module Domain
   # Our dear customer
   class Customer
-
     attr_reader :name, :user_id
 
     # @param user_id [Integer] customer's user ID

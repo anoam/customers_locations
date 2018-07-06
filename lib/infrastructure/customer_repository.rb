@@ -1,10 +1,9 @@
 # frozen_string_literal: true
 
-require 'json'
+require "json"
 module Infrastructure
   # Storage for customers
   class CustomerRepository
-
     # Creates repository
     # @param file_name [String] file to load
     # @param customer_factory [#build] factory to build {Domain::Customer}

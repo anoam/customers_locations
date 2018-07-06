@@ -3,5 +3,5 @@
 # Interacting with user
 module Interface
   autoload :SearchForm, "interface/search_form"
-  autoload :NumericParametter, "interface/numeric_parametter"
+  autoload :NumericParameter, "interface/numeric_parameter"
 end

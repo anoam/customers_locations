@@ -45,10 +45,11 @@ module Domain
       delta_latitude_rad = latitude_rad - other_latitude_rad
 
       distance_rad = Math.sin(delta_latitude_rad / 2)**2 +
-          Math.cos(latitude_rad) * Math.cos(other_latitude_rad) * Math.sin(delta_longitude_rad / 2)**2
+                     Math.cos(latitude_rad) * Math.cos(other_latitude_rad) * Math.sin(delta_longitude_rad / 2)**2
 
       2 * Math.asin(Math.sqrt(distance_rad)) * EARTH_RADIUS
     end
+
     # rubocop:enable Metrics/AbcSize
 
     private
