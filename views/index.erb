@@ -11,7 +11,7 @@
                     $(this).attr("action"),
                     $(this).serialize(),
                     function (response) {
-                        $("#result").val(response)
+                        $("#result").html(response);
                     }
                 )
             })
