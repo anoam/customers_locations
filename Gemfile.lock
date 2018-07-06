@@ -50,8 +50,11 @@ PLATFORMS
 DEPENDENCIES
   rspec (~> 3.7.0)
   rubocop (~> 0.57.2)
-  sinatra
+  sinatra (~> 2.0.3)
   yard (= 0.9.14)
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.2
